@@ -17,10 +17,10 @@ main section {
     text-align: center;
 }
 #background {
-    height: 725px; 
+    height: 725px; background-color: #0e0d0d;
 }
 body {
-    background-color: #e4cccc; height: 1600px; width: 100%; 
+    background-color: #ffffff;  
 }
 header {
     background-color:rgb(59, 82, 73);
