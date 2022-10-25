@@ -1,40 +1,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Time New Roman:wght@700&family=Georgia&display=swap');
-#content {max-width: 1600px; margin: 0 auto; background-color: rgb(247, 245, 242)}
-nav a {text-align:center; color:rgb(12, 12, 12); text-decoration: none; padding: 35px;}
-nav {background-color: rgb(221, 190, 149) ; display: flex; justify-content: space-around; padding: 1em;}
-#hero-msg h1 {text-align: center;}
-h2 {margin: 0;}
-#hero-msg h4 {text-align: center; }
-.button-box {text-align: center;}
-main, section {text-align: center;}
-main section img {box-sizing: border-box;}
-#background {height: 725px; background-color: rgb(221, 190, 149); }
-body {margin: 0; padding: 0; background-color: #ffffff; font-size: 22px; font-family: Raleway, Arial, sans-serif;}
+
+body {margin: 0; 
+    padding: 0; 
+    background-color: #ffffff;}
 header {background-color:rgb(59, 82, 73);}
-nav a:hover {color:rgb(10, 10, 10); border-radius: 5px; box-shadow: 4px 4px 4px #000000; background-color: black; color:#d9c2a3;}
-.home-title {color:black; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 2em; margin-top: 10px;}
-h4 {color:black}
-.book {background-color: rgb(235, 193, 193); color:black; text-decoration: none;font-size: 18px; padding: 15px 30px; margin-top: 50px; border-radius: 5px}
-.join {background-color: rgb(235, 193, 193); color:rgb(0, 0, 0); text-decoration: none; font-size: 18px;padding: 15px 30px; margin-top: 50px; border-radius: 5px}
-.book:hover {background-color: #c9a7a7; color:rgb(0, 0, 0); text-decoration: none} 
-.join:hover {background-color: #c9a7a7; color:rgb(0, 0, 0); text-decoration: none}
-.msg {background-color: rgb(180, 204, 195); line-height: 2em;  padding: 35px;}
-.msg h2 {color:black; font-family: Verdana, Geneva, Tahoma, sans-serif;}
-.msg p {color:black; font-size: .8em;  padding-bottom: 15px;}
-footer {background-color: rgb(180, 204, 195); color:rgb(128, 72, 72); text-align: left; padding: 25px 50px; margin-top: 200px;}
+#content {max-width: 1600px; 
+    margin: 0 auto; 
+    background-color: rgb(247, 245, 242)}
+h1, h2, h3, h4, h5, h6 {text-align: center;
+    padding: 10px;
+    color: black;
+    line-height: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;} 
+nav {background-color: rgb(221, 190, 149) ; 
+    display: flex; 
+    justify-content: space-around; 
+    padding: 1em}       
+nav a {text-align:center; 
+    color:rgb(12, 12, 12); 
+    text-decoration: none; 
+    padding: .75em .75em;
+    line-height: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;}
+nav a:hover {color:rgb(10, 10, 10); 
+    border-radius: 5px; 
+    box-shadow: 4px 4px 4px #000000; 
+    background-color: black; 
+    color:#d9c2a3;}  
+#logo_link {padding-top: 5px; 
+    justify-self: center; 
+    align-self: center; 
+    padding-top: 5px; }
+.logo {width: 220px; 
+    height: 200px; 
+    position: relative; 
+    border-radius: 5px; 
+    box-shadow: 4px 4px 4px #000000;
+    display: grid; 
+    grid-template-columns: 150px auto; 
+    background-color: #20381f;}
+img {max-width: 100%;}
+main section img {box-sizing: border-box;} 
+main, section {text-align: center;}
+.home-title {color:black; 
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 2.25em; 
+    margin-top: 10px;}
+#hero-image {width: 100%;} 
+#hero-msg {text-align: center;}  
+.book, .join {background-color: rgb(235, 193, 193); 
+    color:rgb(0, 0, 0); 
+    text-decoration: none; 
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px; } 
+.book:hover, .join:hover {background-color: #c9a7a7; 
+    color:rgb(0, 0, 0); 
+    text-decoration: none}
+.button-box {text-align: center;
+    margin: 5em;}   
+.card-img{border: 10px solid #d9c2a3;
+    width: 500px;
+    height: 500px;
+    border-radius: 5%;}
+.rivers-card, .camping-card, .rapids-card {margin: 100px 0;} 
+.icon {width: 80px;
+    padding-top: 10px;}
+#background {height: 725px; 
+    background-color: rgb(221, 190, 149);}
+.mountains {width: 100%;}
+.msg {background-color: rgb(180, 204, 195); 
+    line-height: 1.5em;  
+    padding: 55px;}
+.msg h2 {color:black; 
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;}
+.msg p {color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4em;
+    line-height: 1.5em;  
+    padding-bottom: 15px;} 
+#info { font-size: .75em;}
+footer {background-color: rgb(180, 204, 195); 
+    color:rgb(128, 72, 72); 
+    text-align: left; 
+    padding: 25px 50px; 
+    margin-top: 200px;}           
 footer h3 {color:rgb(128, 72, 72)}
-footer a {color:rgb(128, 72, 72); text-decoration: none;}
+footer a {color:rgb(128, 72, 72); 
+    text-decoration: none;}
 footer a:hover {color:rgb(128, 72, 72)}
 footer p {font-size: 1.2em; } 
 footer p a:hover {text-decoration: underline; }
 footer .social img {padding-top: 15px;} 
-.icon {width: 80px; padding-top: 10px; }
-#hero-image {width: 100%;}
-#logo_link {padding-top: 5px; justify-self: center; align-self: center; padding-top: 5px; }
-.logo {width: 220px; height: 200px; position: relative; border-radius: 5px; box-shadow: 4px 4px 4px #000000;  }    
-img {max-width: 100%;}
-#info { font-size: .5em;}
-.rivers-card {margin: 200px 0;} 
-.camping-card {margin: 200px 0;} 
-.rapids-card {margin: 200px 0;} 
-.card-img{border: 10px solid #d9c2a3;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
