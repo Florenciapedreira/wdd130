@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>White water Rafting Vacations | Dry Oar Boating | Home</title>
+    <title>Contact Us</title>
 
 </head>
 <body>
@@ -22,70 +22,81 @@
             </nav>
         </header>
         <main>
-        <h1>Contact Us</h1>
-        <h2>Contact information</h2>
-        <p class="a">Adress: White-Water Rafting</p>
-        <p class="a">Frongoch</p> 
-        <p class="a">Bala</p> 
-        <p class="a">Gwynedd</p> 
-        <p class="a"></p>
-        <p class="a">Telephone:</p> 
-        <p class="a">019698 521553</p>  
-        <p class="a"></p>
-        <p class="a">Email:</p>    
-        <p class="a"> info@whitewaterrafting.co.eeuu</p> 
-        <h3>Opening Times</h3>
-        <p class="b">Monday</p>
-        <p class="b">9:00 am - 4:30 pm</p>
-        <p class="b">Tuesday</p>
-        <p class="b">9:00 am - 4:30 pm</p>
-        <p class="b">Wednesday</p>
-        <p class="b">9:00 am - 4:30 am</p>
-        <p class="b">Thursday</p>
-        <p class="b">9:00 am - 4:30 am</p>
-        <p class="b">Friday</p>
-        <p class="b">9:00 am - 4:30 am</p>
-        <p class="b">Saturday & Sunday</p>
-        <p class="b">Closed</p>
-        <h4>Location</h4>
-        <p class="c">Based on the banks of the River Tryweryn, Frongoch, the National White Water Rafting is just outside Bala in the beautiful mountains of Snowdonia National Park, North.</p>
-        <style>
-            
-            h1{text-align: center;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 2.5em;}
-            .a{background-color: rgb(248, 235, 191);   
-               padding: 10px;
-               margin-top: 0%;
-               margin-bottom: 0%;
-               margin-left: 300px;
-               margin-right: 300px;
-               border-left: 5px solid #3e580b;
-               border-right: 5px solid #3e580b;
-               font-family: 'Times New Roman', Times, serif;
-               font-size: 1.5em;}
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                  <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" />
+                  </li>
+                  <li>
+                    <label for="mail">E-mail:</label>
+                    <input type="email" id="mail" name="user_email" />
+                  </li>
+                  <li>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                  </li>
+                  <li class="button">
+                    <button type="submit">Send your message</button>
+                  </li>
+                </ul>
+              </form>
+              <style>
+              form {/* Center the form on the page */
+                margin: 0 auto;
+                width: 400px;
+                /* Form outline */
+                padding: 2em;
+                border: 1px solid #ccc;
+                border-radius: 1em;}
 
-            .b{background-color: rgb(248, 235, 191);   
-               padding: 10px;
-               margin-top: 0%;
-               margin-bottom: 0%;
-               margin-left: 300px;
-               margin-right: 300px;
-               border-left: 5px solid #3e580b;
-               border-right: 5px solid #3e580b;
-               font-family: 'Times New Roman', Times, serif;
-               font-size: 1.5em;}
+                ul {list-style: none;
+                padding: 0;
+                margin: 0;}
 
-            .c{background-color: rgb(180, 204, 195);   
-               padding: 10px;
-               margin-top: -20px;
-               margin-bottom: 20px;
-               border: 5px solid #080a04;
-               margin-left: 50px;
-               margin-right: 50px;
-               font-family: 'Times New Roman', Times, serif;
-               font-size: 1.5em;}
-        </style>
+                form li + li {margin-top: 1em;}
+
+                label {/* Uniform size & alignment */
+                display: inline-block;
+                width: 90px;
+                text-align: right;}
+
+                input,
+                textarea {/* To make sure that all text fields have the same font settings
+                    By default, textareas have a monospace font */
+                font: 1em sans-serif;
+                /* Uniform text field size */
+                width: 300px;
+                box-sizing: border-box;
+                /* Match form field borders */
+                border: 2px solid #999;}
+
+                input:focus,
+                textarea:focus {/* Additional highlight for focused elements */
+                border-color: #000;}
+
+                textarea {/* Align multiline text fields with their labels */
+                vertical-align: top;
+                /* Provide space to type some text */
+                height: 5em;}
+
+                .button {/* Align buttons with the text fields */
+                padding-left: 90px; /* same size as the label elements */}
+
+                button {/* This extra margin represent roughly the same space as the space
+                    between the labels and their text fields */
+                margin-left: 0.5em;}
+                #feedback {background-color: antiquewhite;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                padding: .5em;
+                /* make this element invisible until we are ready for it */
+                display: none;}
+                .moveDown {margin-top: 3em;}  
+              </style>
         </main>
         <footer>
             <p>Dry Oar &copy; 2022 - Florencia Pedreira WDD130-09</p>
@@ -103,6 +114,23 @@
                 </a>
             </div>
         </footer>
-    </div>      
+    </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>      
 </body>
 </html>
