@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Time New Roman:wght@700&family=Georgia&display=swap');
+
+body {
+    margin: 0; 
+    padding: 0; 
+    background-color: #ffffff;
+  }
+  
+  #content {max-width: 1600px; 
+    max-width: 1600px; 
+    margin: 0 auto; 
+    background-color: rgb(247, 245, 242)
+  }
+  
+  header {
+    background-color:rgb(59, 82, 73);
+    display: grid;
+    grid-template-columns: 200px auto;
+  }
+  
+  nav {
+    background-color:#d9c2a3;
+    display: flex; 
+    justify-content: space-around; 
+    padding: 2.5em
+  } 
+  
+  nav a {text-align:center; 
+    color:rgb(12, 12, 12); 
+    text-decoration: none; 
+    padding: .75em .75em;
+    line-height: 2.5em;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;}
+  nav a:hover {
+    border-radius: 5px; 
+    box-shadow: 4px 4px 4px #000000; 
+    background-color: black; 
+    color:#d9c2a3;}  
+  #logo_link {padding-top: 5px; 
+    justify-self: center; 
+    align-self: center;}
+  .logo {width: 220px; 
+    height: 200px; 
+    position: relative; 
+    border-radius: 5px; 
+    box-shadow: 4px 4px 4px #000000;
+    display: grid; 
+    grid-template-columns: 150px auto; 
+    background-color: #20381f;}
+  img {max-width: 100%;}
