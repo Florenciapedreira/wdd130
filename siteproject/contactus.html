@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="siteproject/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+</head>
+<body>
+    <div id= "content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/healthylifelogo.png" alt="Healthy Life Logo">
+            </a>
+            <nav>
+                <a href="index.html">Health</a>
+                <a href="phisicalhealth.html">Phisical Health</a>
+                <a href="emotionalhealth.html">Emotional Health</a>
+                <a href="socialheatlh.html">Social Health</a>
+            </nav>
+        </header>
+        <main>
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                  <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" />
+                  </li>
+                  <li>
+                    <label for="mail">E-mail:</label>
+                    <input type="email" id="mail" name="user_email" />
+                  </li>
+                  <li>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                  </li>
+                  <li class="button">
+                    <button type="submit">Send your message</button>
+                  </li>
+                </ul>
+              </form>
+              <style>
+              form {/* Center the form on the page */
+                margin: 0 auto;
+                width: 400px;
+                /* Form outline */
+                padding: 2em;
+                border: 1px solid #ccc;
+                border-radius: 1em;}
+
+                ul {list-style: none;
+                padding: 0;
+                margin: 0;}
+
+                form li + li {margin-top: 1em;}
+
+                label {/* Uniform size & alignment */
+                display: inline-block;
+                width: 90px;
+                text-align: right;}
+
+                input,
+                textarea {/* To make sure that all text fields have the same font settings
+                    By default, textareas have a monospace font */
+                font: 1em sans-serif;
+                /* Uniform text field size */
+                width: 300px;
+                box-sizing: border-box;
+                /* Match form field borders */
+                border: 2px solid #999;}
+
+                input:focus,
+                textarea:focus {/* Additional highlight for focused elements */
+                border-color: #000;}
+
+                textarea {/* Align multiline text fields with their labels */
+                vertical-align: top;
+                /* Provide space to type some text */
+                height: 5em;}
+
+                .button {/* Align buttons with the text fields */
+                padding-left: 90px; /* same size as the label elements */}
+
+                button {/* This extra margin represent roughly the same space as the space
+                    between the labels and their text fields */
+                margin-left: 0.5em;}
+                #feedback {background-color: antiquewhite;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                padding: .5em;
+                /* make this element invisible until we are ready for it */
+                display: none;}
+                .moveDown {margin-top: 3em;}  
+              </style>
+        </main>
+        <footer>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <p>Mail: healthylife@gmail.com</p>
+            <p>Phone: +598 654 376</p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>      
+</body>
+<style>
+        body {
+        margin: 0; 
+        padding: 0; 
+        background-color: #ffffff;
+    }
+    
+    #content {
+        max-width: 1600px; 
+        max-width: 1600px; 
+        margin: 0 auto; 
+        background-color: rgb(247, 245, 242)
+    }
+    
+    header {
+        background-color:rgb(204, 185, 180);
+        display: grid;
+        grid-template-columns: 200px auto;
+    }
+    
+    nav {
+        background-color: rgb(204, 185, 180);
+        display: flex; 
+        justify-content: space-around; 
+        padding: 2.5em
+    } 
+    
+    nav a {
+        text-align:center; 
+        color:rgb(12, 12, 12); 
+        text-decoration: none; 
+        padding: .75em .75em;
+        line-height: 2.5em;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2em;
+    }
+    nav a:hover {
+        border-radius: 5px; 
+        box-shadow: 4px 4px 4px #000000; 
+        background-color: black; 
+        color:#d9c2a3;} 
+
+    #logo_link {
+        padding-top: 0px; 
+        justify-self: center; 
+        align-self: center;
+    }
+    .logo {
+        width: 200px; 
+        height: 220px;
+    }
+
+    footer {
+        background-color: rgb(204, 185, 180);  
+        padding: 25px 25px; 
+        margin-top:0;
+        color:rgb(7, 7, 7);
+        font-size: 1.2em;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    footer a {
+        text-decoration: none;
+        color:rgb(31, 29, 29);
+        font-size: 1.2em;
+    }
+
+    footer p a:hover {
+        text-decoration: underline;
+    }
+</style>
+</html>

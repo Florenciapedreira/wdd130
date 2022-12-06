@@ -15,7 +15,7 @@
                 <img class="logo" src="images/healthylifelogo.png" alt="Healthy Life Logo">
             </a>
             <nav>
-                <a href="health.html">Health</a>
+                <a href="index.html">Health</a>
                 <a href="phisicalhealth.html">Phisical Health</a>
                 <a href="emotionalhealth.html">Emotional Health</a>
                 <a href="socialheatlh.html">Social Health</a>
@@ -34,22 +34,20 @@
                 <p>Emotional health is the ability to be able to enjoy life and at the same time face the daily problems that arise, whether it is making decisions, dealing with and adapting to difficult situations or talking about our needs and desires.</p>
             </section>
             <section class="text">
-                <p><p>There are many ways to improve or maintain good emotional health.</p>
-            </section>
-            <section class="Emotional">
+                <p class="text2">There are many ways to improve or maintain good emotional health.</p>
                 <img class="Health1" src="images/emhealth.jpg" alt="Halth1">    
             </section>
             <section>
-                <p><p>Be aware of your emotions and reactions. Notice what makes you sad, frustrated, or angry. </p>
-                <p>Express your feelings appropriately. Let those close to you know when something is bothering you. </p>
-                <p>Keeping feelings of sadness or anger hidden increases stress. This can cause problems in your relationships and at work or school.</p>
-                <p>Think before you act. Give yourself time to think and be quiet before you say or do something you might regret.</p>
-                <p>Manage stress. Learn relaxation methods to deal with stress. These could include deep breathing, meditation, and exercise.</p>
-                <p>Aim for balance. Find a healthy balance between work and play, and between activity and rest. Take time to do the things you enjoy. Focus on the positive things in your life.</p>
-                <p>Take care of your physical health. Exercise regularly, eat healthy meals, and get enough sleep. Do not abuse drugs or alcohol. Don't let physical health affect your emotional health.</p>
-                <p>Connect with others. Make a lunch date, join a group and say hello to strangers. We need positive connections with other people.</p>
-                <p>Find purpose and meaning. Find out what is important to you in life and focus on that. It could be work, your family, volunteering, caregiving, or something else. Take time to do what feels meaningful to you.</p>
-                <p>Stay positive. Focus on the good things in life. Forgive yourself for making mistakes and forgive others. Spend time with healthy and positive people.</p></p>
+                <p class="text3">Be aware of your emotions and reactions. Notice what makes you sad, frustrated, or angry. </p>
+                <p class="text4">Express your feelings appropriately. Let those close to you know when something is bothering you. </p>
+                <p class="text5">Keeping feelings of sadness or anger hidden increases stress. This can cause problems in your relationships and at work or school.</p>
+                <p class="text6">Think before you act. Give yourself time to think and be quiet before you say or do something you might regret.</p>
+                <p class="text7">Manage stress. Learn relaxation methods to deal with stress. These could include deep breathing, meditation, and exercise.</p>
+                <p class="text8">Aim for balance. Find a healthy balance between work and play, and between activity and rest. Take time to do the things you enjoy. Focus on the positive things in your life.</p>
+                <p class="text9">Take care of your physical health. Exercise regularly, eat healthy meals, and get enough sleep. Do not abuse drugs or alcohol. Don't let physical health affect your emotional health.</p>
+                <p class="text10">Connect with others. Make a lunch date, join a group and say hello to strangers. We need positive connections with other people.</p>
+                <p class="text11">Find purpose and meaning. Find out what is important to you in life and focus on that. It could be work, your family, volunteering, caregiving, or something else. Take time to do what feels meaningful to you.</p>
+                <p class="text12">Stay positive. Focus on the good things in life. Forgive yourself for making mistakes and forgive others. Spend time with healthy and positive people.</p></p>
             </section>
         </main>
         <footer>
@@ -70,4 +68,122 @@
         </footer>
     </div>      
 </body>
+<style>
+        body {
+        margin: 0; 
+        padding: 0; 
+        background-color: #ffffff;
+    }
+    
+    #content {
+        max-width: 1600px; 
+        max-width: 1600px; 
+        margin: 0 auto; 
+        background-color: rgb(247, 245, 242)
+    }
+    
+    header {
+        background-color:rgb(204, 185, 180);
+        display: grid;
+        grid-template-columns: 200px auto;
+    }
+    
+    nav {
+        background-color: rgb(204, 185, 180);
+        display: flex; 
+        justify-content: space-around; 
+        padding: 2.5em
+    } 
+    
+    nav a {
+        text-align:center; 
+        color:rgb(12, 12, 12); 
+        text-decoration: none; 
+        padding: .75em .75em;
+        line-height: 2.5em;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2em;
+    }
+    nav a:hover {
+        border-radius: 5px; 
+        box-shadow: 4px 4px 4px #000000; 
+        background-color: black; 
+        color:#d9c2a3;} 
+
+    #logo_link {
+        padding-top: 0px; 
+        justify-self: center; 
+        align-self: center;
+    }
+    .logo {
+        width: 200px; 
+        height: 220px;
+    }
+
+    #hero {
+        display: grid;
+        margin-bottom: -100px; 
+        grid-template-columns: 1fr 3fr 1fr;}
+
+    #hero-box {
+        grid-column: 1/11; 
+        grid-row: 1/3;
+    }
+
+    #hero-image {
+        width: 100%;
+    }
+
+    #hero-msg {
+        text-align: center;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        font-size: 25px;
+    }
+
+    .text1{
+        background-color: #ffffff;
+        padding: 3em;
+        margin-top: 3em;
+        margin-bottom: -1em;
+        font-size: 25px;
+    }
+
+    #text{grid-template-columns: 2;}
+
+    .Health1{grid-column: 1;
+        width: 40%;
+    }
+      
+    .text2{text-align: right;
+        font-size: 25px;
+        grid-column: 2;}
+    
+    .text3,.text4,.text5,.text6,.text7,.text8,.text9,.text10,.text11,.text12,.text13{
+        font-size: 30px;
+        margin-left: 35px;
+        margin-right: 35px;
+        }
+      
+    footer {
+        background-color: rgb(204, 185, 180);  
+        padding: 25px 25px; 
+        margin-top:0;
+        color:rgb(7, 7, 7);
+        font-size: 1.2em;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    footer a {
+        text-decoration: none;
+        color:rgb(31, 29, 29);
+        font-size: 1.2em;
+    }
+
+    footer p a:hover {
+        text-decoration: underline;
+    }
+</style>
 </html>
