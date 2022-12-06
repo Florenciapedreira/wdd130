@@ -29,15 +29,16 @@
                 <h1 class="home-title">Emotional Health</h1>
             </section> 
         </div>
-        <main class="home-grid">
+        
             <section class="text1">
                 <p>Emotional health is the ability to be able to enjoy life and at the same time face the daily problems that arise, whether it is making decisions, dealing with and adapting to difficult situations or talking about our needs and desires.</p>
             </section>
             <section class="text">
-                <p class="text2">There are many ways to improve or maintain good emotional health.</p>
-                <img class="Health1" src="images/emhealth.jpg" alt="Halth1">    
-            </section>
-            <section>
+        <main class="home-grid">        
+        <p class="text2">There are many ways to improve or maintain good emotional health.</p>
+        <img class="Health1" src="images/emhealth.jpg" alt="Halth1">    
+        </main>    
+        <section>
                 <p class="text3">Be aware of your emotions and reactions. Notice what makes you sad, frustrated, or angry. </p>
                 <p class="text4">Express your feelings appropriately. Let those close to you know when something is bothering you. </p>
                 <p class="text5">Keeping feelings of sadness or anger hidden increases stress. This can cause problems in your relationships and at work or school.</p>
@@ -48,10 +49,11 @@
                 <p class="text10">Connect with others. Make a lunch date, join a group and say hello to strangers. We need positive connections with other people.</p>
                 <p class="text11">Find purpose and meaning. Find out what is important to you in life and focus on that. It could be work, your family, volunteering, caregiving, or something else. Take time to do what feels meaningful to you.</p>
                 <p class="text12">Stay positive. Focus on the good things in life. Forgive yourself for making mistakes and forgive others. Spend time with healthy and positive people.</p></p>
-            </section>
-        </main>
+        </section>
+        
         <footer>
-            <p>Contact Us:</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
             <p>Mail: healthylife@gmail.com</p>
             <p>Phone: +598 654 376</p>
             <div class="social">
@@ -149,15 +151,31 @@
         font-size: 25px;
     }
 
-    #text{grid-template-columns: 2;}
+    main{
+        display:grid;
+        grid-template-columns: 3;
+        grid-template-rows: 8;
+    }
 
-    .Health1{grid-column: 1;
-        width: 40%;
+    #text{
+        text-align: left;
+        
+        grid-column: 5/5;
+        grid-row: 3/4;
+        font-size: 5em;
+    }
+
+    .Health1{
+        grid-column:4;
+        grid-row: 3/4;
+        width: 100%;
     }
       
-    .text2{text-align: right;
-        font-size: 25px;
-        grid-column: 2;}
+    .text2{text-align: center;
+        font-size: 50px;
+        grid-column: 2;
+        grid-row: 3/4;
+        padding: 10px;}
     
     .text3,.text4,.text5,.text6,.text7,.text8,.text9,.text10,.text11,.text12,.text13{
         font-size: 30px;

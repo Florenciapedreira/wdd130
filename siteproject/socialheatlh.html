@@ -24,11 +24,12 @@
         <div id="hero">
             <section id="hero-msg">
                 <h1 class="home-title">Social Health</h1>
-                <p>Social health is the ability to adapt and self-manage in the face of changes and challenges in the environment, as well as the ability to develop satisfactory relationships with other people.</p>
+            </section>    
+        <main class="home-grid">       
+                <p class="ser">Social health is the ability to adapt and self-manage in the face of changes and challenges in the environment, as well as the ability to develop satisfactory relationships with other people.</p>
                 <img id="hero-image" src="images/socialhealth.jpg" alt="Health">
-            </section> 
+        </main>      
         </div>
-        <main class="home-grid">
             <section class="text">
                 <p><p>What factors influence our social health?
                     <p>Factors such as employment conditions, social exclusion, public health programs, gender equity, early childhood development, globalization, health systems, evaluation of health variables, and healthy urbanization.</p></p>
@@ -45,9 +46,9 @@
             <section class="Social">
                 <img class="social1" src="images/happy_social.jpg" alt="Halth1">    
             </section>
-        </main>
         <footer>
-            <p>Contact Us:</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
             <p>Mail: healthylife@gmail.com</p>
             <p>Phone: +598 654 376</p>
             <div class="social">
@@ -116,8 +117,41 @@
         height: 220px;
     }
 
-    .social1{width: 100%;}
+    .social1{
+        width: 100%;
+    }
     
+    main{
+        display:grid;
+        grid-template-columns: 3;
+        grid-template-rows: 8;
+    }
+
+    .ser{
+        text-align: center;
+        padding: 10px;
+        grid-column: 5/5;
+        grid-row: 3/4;
+        font-size: 2em;
+    }
+    
+    #hero-image{
+        grid-column:4;
+        grid-row: 3/4;
+        width: 100%;
+    }
+
+    #hero-msg {
+        text-align: center;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        background-color: rgb(247, 245, 242);
+        padding: 25px;
+        font-size: 25px;
+    }
+
+    .text{font-size: 2em;}
+
     footer {
         background-color: rgb(204, 185, 180);  
         padding: 25px 25px; 
